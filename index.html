@@ -87,24 +87,29 @@
             border-radius: 10px;
             margin-bottom: 10px;
         }
-    .card-back h1 {
-        font-size: 1.8em; /* 글자 크기 확대 */
-        font-weight: bold; /* 글자 강조 */
-        margin: 15px 0; /* 상하 간격 추가 */
-        text-align: center;
-    }
+.card-back h1 {
+    font-size: 1.5em; /* 글자 크기 확대 */
+    font-weight: bold; /* 글자 강조 */
+    margin: 15px 0; /* 기본 상하 간격 */
+    text-align: center; /* 중앙 정렬 */
+    position: relative; /* 상대 위치 조정 */
+    top: -20px; /* 위로 20px 이동 */
+}
+
         h1 {
             font-size: 1.2em;
             margin: 10px 0;
             text-align: center;
         }
-    .card-back p {
-        font-weight: bold; /* 볼드체 적용 */
-        font-size: 0.8em; /* 텍스트 크기 조정 */
-        line-height: 1.5; /* 줄 간격 조정 */
-        text-align: center; /* 텍스트 중앙 정렬 */
-        margin: 10px 0; /* 상하 간격 추가 */
-    }
+.card-back p {
+    font-size: 0.7em; /* 글자 크기 확대 */
+    font-weight: bold; /* 글자 강조 */
+    margin: 15px 0; /* 기본 상하 간격 */
+    text-align: center; /* 중앙 정렬 */
+    position: relative; /* 상대 위치 조정 */
+    top: 60px; /* 위로 20px 이동 */
+}
+
   .popup p {
     font-size: 1.1em; /* 폰트 크기를 키움 */
     font-weight: bold; /* 볼드체 적용 */
@@ -125,7 +130,7 @@
             color: #226E86;
             background-color: #70BFBB;
             border: none;
-            border-radius: 15px;
+            border-radius: 25px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s;
             outline: none;
@@ -210,7 +215,7 @@
 
             .button {
                 padding: 8px 15px;
-                font-size: 0.9em;
+                font-size: 1.3em;
             }
 
             iframe {
@@ -242,11 +247,10 @@
         <div class="card" id="card">
             <div class="card-face card-front"></div>
             <div class="card-face card-back">
-                <h1>긴장이 되시나요?</h1><h1></h1>
+                <h1>긴장이 되시나요?</h1>
                 <iframe src="https://www.youtube.com/embed/veHwdwi_DSo?si=rJl7M2MbuoqBzCP0" allowfullscreen></iframe>
-                <h1></h1>
-                <p><strong>"Relaxsene"</strong><br><strong>The best choice for you, dominated by tension</strong></p>
                 <button class="button" onclick="showPopup()">'조언'의 메시지 받기</button>
+                <p><strong>"Relaxsene"</strong><br>The best choice for you, dominated by tension</p>
             </div>
         </div>
     </div>
