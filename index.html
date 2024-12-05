@@ -79,29 +79,6 @@
         padding: 15px;
         box-sizing: border-box;
     }
-    /* CLICK 텍스트 */
-    .click-text {
-        position: absolute;
-        top: -30%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 1.5em;
-        font-weight: bold;
-        color: rgba(255, 255, 255, 0.8);
-        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-        z-index: 10; /* 카드 위로 표시 */
-        animation: fadeInOut 2s infinite;
-    }
-
-    /* CLICK 텍스트 깜빡이는 효과 */
-    @keyframes fadeInOut {
-        0%, 100% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0.5;
-        }
-    }
         iframe {
             width: 100%;
             max-width: 280px;
@@ -262,7 +239,6 @@
 </head>
 <body>
     <div class="card-container">
-        <div class="click-text">CLICK</div>
         <div class="card" id="card">
             <div class="card-face card-front"></div>
             <div class="card-face card-back">
