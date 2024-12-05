@@ -82,13 +82,14 @@
     /* CLICK 텍스트 */
     .click-text {
         position: absolute;
-        top: 20%;
+        top: -30%;
         left: 50%;
         transform: translateX(-50%);
         font-size: 1.5em;
         font-weight: bold;
         color: rgba(255, 255, 255, 0.8);
         text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        z-index: 10; /* 카드 위로 표시 */
         animation: fadeInOut 2s infinite;
     }
 
